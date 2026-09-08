@@ -24,7 +24,7 @@
     L.control.attribution({prefix: false}).addTo(map);
     
     // Path diubah ke relative path (asumsi folder mbtiles ada di sebelah file index.html)
-    var tilesource_layer = L.tileLayer('./mbtiles/{z}/{x}/{y}.png', {
+    var tilesource_layer = L.tileLayer('./{z}/{x}/{y}.png', {
       minZoom: 12, 
       maxZoom: 14, 
       tms: false, 
